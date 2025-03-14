@@ -26,6 +26,11 @@ kotlin {
     }
 
     sourceSets {
+        val commonMain by getting {
+            dependencies {
+                implementation(compose.components.resources)
+            }
+        }
         val jvmMain by getting {
             dependencies {
                 implementation(projects.shared)
