@@ -21,9 +21,7 @@ kotlin {
     }
 
     jvmToolchain(jdkToolchainVersion)
-    jvm {
-        withJava()
-    }
+    jvm()
 
     sourceSets {
         val commonMain by getting {
